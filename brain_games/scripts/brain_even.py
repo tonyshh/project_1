@@ -11,12 +11,10 @@ def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello,', name + '!')
-    
-
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(ROUNDS):
-        number = randint(1,100)
-        if number%2 == 0:
+        number = randint(1, 100)
+        if number % 2 == 0:
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
@@ -25,22 +23,14 @@ def main():
         print(f'Your answer: {players_answer}')
         if players_answer == correct_answer:
             print('Correct!')
-            counter+=1
+            counter += 1
         else:
-            print(f'"{players_answer}" is wrong answer ;(. Correct answer was "{correct_answer}"')
+            print(f'"{players_answer}" is wrong answer ;(.\
+            \nCorrect answer was "{correct_answer}"')
             break
         if counter == 3:
             print(f'Congratulations! {name}')
 
 
-
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
