@@ -1,7 +1,6 @@
 from prompt import string
 
 
-
 def start(game):
 
     ROUNDS = 3
@@ -11,7 +10,7 @@ def start(game):
     name = string('May I have your name?')
     print(f'Hello, {name}!')
     for _ in range(ROUNDS):
-        number,correct_answer = game.game_round()
+        number, correct_answer = game.game_round()
         welcome = game.welcome
         print(welcome)
         print(f'Question {number}')
