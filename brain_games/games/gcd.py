@@ -12,4 +12,4 @@ def game_round():
     ask_question = f"{num1} {num2}"
 
 
-    return correct_answer, ask_question
+    return ask_question, correct_answer
