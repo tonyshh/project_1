@@ -3,6 +3,7 @@ from random import randint
 welcome = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 answer_type = str
 
+
 def game_round():
     number = randint(1, 100)
     n = 2
@@ -14,5 +15,4 @@ def game_round():
         correct_answer = 'no'
 
     ask_question = number
-    
-    return ask_question,  correct_answer
+    return ask_question, correct_answer
