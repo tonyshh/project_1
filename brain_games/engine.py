@@ -10,11 +10,11 @@ def start(game):
     name = string('May I have your name?')
     print(f'Hello, {name}!')
     for _ in range(ROUNDS):
-        number, correct_answer = game.game_round()
+        ask_question, correct_answer = game.game_round()
         welcome = game.welcome
         print(welcome)
-        print(f'Question {number}')
-        players_answer = int(input())
+        print(f'Question {ask_question}')
+        players_answer = game.answer_type(input())
         print(f'Your answer: {players_answer}')
         if players_answer == correct_answer:
             print('Correct!')

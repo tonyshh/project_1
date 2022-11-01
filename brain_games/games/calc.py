@@ -3,6 +3,7 @@ from random import choice
 
 
 welcome = 'What is the result of the expression?'
+answer_type = int
 
 
 def game_round():
@@ -10,10 +11,10 @@ def game_round():
     num2 = randint(1, 101)
     math_operation = choice('+-*')
     if math_operation == '+':
-        result = num1 + num2
+        correct_answer = num1 + num2
     elif math_operation == '-':
-        result = num1 - num2
+        correct_answer = num1 - num2
     elif math_operation == '*':
-        result = num1 * num2
-    question = f'{num1} {math_operation} {num2}'
-    return question, result
+        correct_answer = num1 * num2
+    ask_question = f'{num1} {math_operation} {num2}'
+    return ask_question, correct_answer
