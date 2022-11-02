@@ -25,4 +25,4 @@ def start(game):
             print(f'Let`s try again {name}')
             break
         if counter == 3:
-            print(f'Congratulations! {name}')
+            print(f'Congratulations, {name}!')
