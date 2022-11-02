@@ -14,7 +14,7 @@ def start(game):
         WELCOME = game.WELCOME
         print(WELCOME)
         print(f'Question {ASK_QUESTION}')
-        players_answer = game.answer_type(input())
+        players_answer = game.ANSWER_TYPE(input())
         print(f'Your answer: {players_answer}')
         if players_answer == CORRECT_ANSWER:
             print('Correct!')
