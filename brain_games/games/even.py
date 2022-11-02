@@ -1,14 +1,14 @@
 from random import randint
 
 
-welcome = """Answer "yes" if the number is even, otherwise answer "no"."""
-answer_type = str
+WELCOME = """Answer "yes" if the number is even, otherwise answer "no"."""
+ANSWER_TYPE = str
 
 
 def game_round():
-    ask_question = randint(1, 101)
-    if ask_question % 2 == 0:
-        correct_answer = 'yes'
+    ASK_QUESTION = randint(1, 101)
+    if ASK_QUESTION % 2 == 0:
+        CORRECT_ANSWER = 'yes'
     else:
-        correct_answer = 'no'
-    return ask_question, correct_answer
+        CORRECT_ANSWER = 'no'
+    return ASK_QUESTION, CORRECT_ANSWER

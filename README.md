@@ -3,13 +3,23 @@
 
 <a href="https://codeclimate.com/github/tonyshh/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/8b77c728aa79402f8064/maintainability" /></a>
 
+1. Игра "Проверка на чётность"
+
 https://asciinema.org/a/MaZlUEyo8UZNLRm67v2iik3Sp
+
+2. Игра "Калькулятор"
 
 https://asciinema.org/a/533673
 
+3. Игра "НОД"(наибольший общий делитель)
+
 https://asciinema.org/a/RzaaHDvrABu7T5HvkCJSxQpcs
 
+4. Игра "Арифметическая прогрессия"
+
 https://asciinema.org/a/Ms8S47k7SVhrkerjsoNuHoyLL
+
+5. Игра "Простое ли число?"
 
 https://asciinema.org/a/J3NLuNrsyUsYoGBbiokbTB19T
 

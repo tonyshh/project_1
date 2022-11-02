@@ -1,7 +1,7 @@
 from random import randint
 
-welcome = 'What number is missing in the progression?'
-answer_type = int
+WELCOME = 'What number is missing in the progression?'
+ANSWER_TYPE = int
 
 
 def game_round():
@@ -11,9 +11,9 @@ def game_round():
     progression = []
     progression = list(range(num1, num2, n))
     index = randint(1, len(progression) - 1)
-    correct_answer = progression[index]
+    CORRECT_ANSWER = progression[index]
     progression[index] = '..'
     rebuild_progression = (' '.join(map(str, progression)))
-    ask_question = rebuild_progression
+    ASK_QUESTION = rebuild_progression
 
-    return ask_question, correct_answer
+    return ASK_QUESTION, CORRECT_ANSWER

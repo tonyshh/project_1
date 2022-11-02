@@ -1,7 +1,7 @@
 from random import randint
 
-welcome = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-answer_type = str
+WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+ANSWER_TYPE = str
 
 
 def game_round():
@@ -10,9 +10,9 @@ def game_round():
     while number % n != 0:
         n += 1
     if n == number:
-        correct_answer = 'yes'
+        CORRECT_ANSWER = 'yes'
     else:
-        correct_answer = 'no'
+        CORRECT_ANSWER = 'no'
 
-    ask_question = number
-    return ask_question, correct_answer
+    ASK_QUESTION = number
+    return ASK_QUESTION, CORRECT_ANSWER

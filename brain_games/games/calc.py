@@ -2,8 +2,8 @@ from random import randint
 from random import choice
 
 
-welcome = 'What is the result of the expression?'
-answer_type = int
+WELCOME = 'What is the result of the expression?'
+ANSWER_TYPE = int
 
 
 def game_round():
@@ -11,10 +11,10 @@ def game_round():
     num2 = randint(1, 101)
     math_operation = choice('+-*')
     if math_operation == '+':
-        correct_answer = num1 + num2
+        CORRECT_ANSWER = num1 + num2
     elif math_operation == '-':
-        correct_answer = num1 - num2
+        CORRECT_ANSWER = num1 - num2
     elif math_operation == '*':
-        correct_answer = num1 * num2
+        CORRECT_ANSWER = num1 * num2
     ask_question = f'{num1} {math_operation} {num2}'
-    return ask_question, correct_answer
+    return ask_question, CORRECT_ANSWER

@@ -2,14 +2,14 @@ import math
 from random import randint
 
 
-welcome = """Find the greatest common divisor of given numbers."""
-answer_type = int
+WELCOME = """Find the greatest common divisor of given numbers."""
+ANSWER_TYPE = int
 
 
 def game_round():
     num1 = randint(1, 101)
     num2 = randint(1, 101)
-    correct_answer = math.gcd(num1, num2)
-    ask_question = f"{num1} {num2}"
+    CORRECT_ANSWER = math.gcd(num1, num2)
+    ASK_QUESTION = f"{num1} {num2}"
 
-    return ask_question, correct_answer
+    return ASK_QUESTION, CORRECT_ANSWER
