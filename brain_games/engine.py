@@ -13,7 +13,7 @@ def start(game):
         ASK_QUESTION, CORRECT_ANSWER = game.game_round()
         WELCOME = game.WELCOME
         print(WELCOME)
-        print(f'Question {ASK_QUESTION}')
+        print(f'Question: {ASK_QUESTION}')
         players_answer = game.ANSWER_TYPE(input())
         print(f'Your answer: {players_answer}')
         if players_answer == CORRECT_ANSWER:
