@@ -22,7 +22,7 @@ def start(game):
         else:
             print(f'"{players_answer}" is wrong answer ;(.\
             \nCorrect answer was "{CORRECT_ANSWER}"')
-            print(f'Let`s try again, {name}!')
+            print(f"Let's try again, {name}!")
             break
         if counter == 3:
             print(f'Congratulations, {name}!')
