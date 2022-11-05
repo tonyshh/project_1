@@ -4,8 +4,6 @@ ROUNDS = 3
 
 
 def start(game):
-
-    
     print('Welcome to the Brain Games!')
     name = string('May I have your name?')
     print(f'Hello, {name}!')
@@ -22,5 +20,4 @@ def start(game):
             \nCorrect answer was "{correct_answer}"')
             print(f"Let's try again, {name}!")
             break
-    
-    print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')
