@@ -1,28 +1,26 @@
 from prompt import string
 
+ROUNDS = 3
+
 
 def start(game):
 
-    ROUNDS = 3
-    counter = 0
-
+    
     print('Welcome to the Brain Games!')
     name = string('May I have your name?')
     print(f'Hello, {name}!')
     for _ in range(ROUNDS):
-        ASK_QUESTION, CORRECT_ANSWER = game.game_round()
-        WELCOME = game.WELCOME
-        print(WELCOME)
-        print(f'Question: {ASK_QUESTION}')
-        players_answer = game.ANSWER_TYPE(input())
+        question, correct_answer = game.game_round()
+        print(game.DESCRIPTION)
+        print(f'Question: {question}')
+        players_answer = input()
         print(f'Your answer: {players_answer}')
-        if players_answer == CORRECT_ANSWER:
+        if f'{players_answer}' == f'{correct_answer}':
             print('Correct!')
-            counter += 1
-        else:
+        elif f'{players_answer}' != f'{correct_answer}':
             print(f'"{players_answer}" is wrong answer ;(.\
-            \nCorrect answer was "{CORRECT_ANSWER}"')
+            \nCorrect answer was "{correct_answer}"')
             print(f"Let's try again, {name}!")
             break
-        if counter == 3:
-            print(f'Congratulations, {name}!')
+    
+    print(f'Congratulations, {name}!')
