@@ -21,6 +21,6 @@ https://asciinema.org/a/Ms8S47k7SVhrkerjsoNuHoyLL
 
 5. Игра "Простое ли число?"
 
-https://asciinema.org/a/J3NLuNrsyUsYoGBbiokbTB19T
+<script id="asciicast-J3NLuNrsyUsYoGBbiokbTB19T" src="https://asciinema.org/a/J3NLuNrsyUsYoGBbiokbTB19T.js" async></script>
 
 
